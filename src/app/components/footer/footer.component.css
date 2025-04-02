@@ -3,11 +3,13 @@
   color: var(--primary-color);
   font-family: Forte;
 }
-#footer a{
+a{
   color: var(--secondary-color);
-}
-#footer a:hover{
-  color: var(--primary-color);
+  text-decoration: none;
+
+  &:hover{
+    color: var(--primary-color);
+  }
 }
 #instagram svg{
   fill: #ffffff; /* Color inicial */

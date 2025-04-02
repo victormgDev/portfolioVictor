@@ -2,8 +2,14 @@
 /* Importar Bootstrap */
 
 /*Variables globales*/
+@font-face {
+  font-family: 'Forte';
+  src: url('../fonts/forte.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 :root{
-  --primary-color: #0DCAF0FF;
+  --primary-color: #0dcaf0;
   --secondary-color: rgba(13, 202, 240, 0.4);
   --dark-bg: #1a1a1a;
   --text-light: #fff;

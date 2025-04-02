@@ -20,7 +20,7 @@ export class AboutMeComponent {
       movil: '678962767',
       email: 'admin@victormontesgarrido.com',
       web: 'www.victormontesgarrido.com',
-      localizacion: 'Membrilla, Ciudad Real',
+      localizacion: 'Membrilla, Ciudad Real, 13230',
       descripcion: this.sanitizer.bypassSecurityTrustHtml(`
         Hola a tod@s, soy <span style="color:#0DCAF0FF">Victor Montes Garrido</span>, un apasionado del desarrollo de aplicaciones web con
         formación académica en el ciclo formativo de grado superior en desarrollo de aplicaciones web. Durante mis estudios,
