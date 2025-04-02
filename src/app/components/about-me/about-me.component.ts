@@ -19,17 +19,19 @@ export class AboutMeComponent {
       nacimiento: '22 de Septiembre de 1994',
       movil: '678962767',
       email: 'admin@victormontesgarrido.com',
-      web: 'victormontesgarrido.com',
+      web: 'www.victormontesgarrido.com',
       localizacion: 'Membrilla, Ciudad Real',
       descripcion: this.sanitizer.bypassSecurityTrustHtml(`
-        Hola a tod@s, soy <span style="color:#0DCAF0FF">Victor Montes Garrido</span> , un apasionado del desarrollo de aplicaciones
-        web con formación académica de ciclo formativo de grado superior en desarrollo de aplicaciones
-        web. Durante mis estudios, he adquirido sólidos conocimientos en diversas tecnologías y
-        lenguajes de programación, incluyendo HTML5, CSS3, Sass, JavaScript, MySQL y frameworks como Bootstrap5.
-        Mi experiencia en el desarrollo web se complementa con habilidades en diseño de bases de datos y gestión de proyectos.<br><br>
+        Hola a tod@s, soy <span style="color:#0DCAF0FF">Victor Montes Garrido</span>, un apasionado del desarrollo de aplicaciones web con
+        formación académica en el ciclo formativo de grado superior en desarrollo de aplicaciones web. Durante mis estudios,
+        he adquirido sólidos conocimientos en diversas tecnologías y lenguajes de programación, incluyendo HTML5, CSS3, Sass,
+        JavaScript, PHP, C#, MySQL, Bootstrap 5, Angular y .NET.<br><br>
 
-        Actualmente estoy realizando las prácticas de finalización del ciclo formativo, donde estoy aplicando
-        mis conocimientos en un entorno real y sobre todo adquiriendo experiencia laboral en el sector. <br><br>
+        Mi experiencia en el desarrollo web se complementa con habilidades en diseño de bases de datos, gestión de proyectos
+        y la creación de APIs con .NET y MongoDB, lo que me permite desarrollar aplicaciones escalables y eficientes.<br><br>
+
+        Actualmente, estoy desarrollando mi portafolio utilizando Angular y .NET, mejorando mis habilidades en desarrollo
+        frontend y backend mientras optimizo la experiencia del usuario con interfaces dinámicas y atractivas. <br><br>
 
         Mi enfoque se centra en crear soluciones web eficientes, intuitivas y con un diseño atractivo que mejora
         la experiencia del usuario. Estoy siempre en búsqueda activa de nuevas oportunidades laborales para crecer profesionalmente

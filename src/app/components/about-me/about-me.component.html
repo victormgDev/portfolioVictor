@@ -19,16 +19,12 @@
                 <span class="text-end">{{personalInfo.nacimiento}}</span>
               </li>
               <li class="list-group-item d-flex flex-wrap justify-content-between  text-white ">
-                <span class="fw-bold text-info">Teléfono</span>
-                <span class="text-end">{{ personalInfo.movil }}</span>
-              </li>
-              <li class="list-group-item d-flex flex-wrap justify-content-between  text-white ">
                 <span class="fw-bold text-info">Email</span>
                 <span class="text-end">{{personalInfo.email}}</span>
               </li>
               <li class="list-group-item d-flex flex-wrap justify-content-between  text-white ">
                 <span class="fw-bold text-info">Web</span>
-                <span class="text-end">{{personalInfo.web}}</span>
+                <span class="text-end"><a href="{{personalInfo.web}}">{{personalInfo.web}}</a></span>
               </li>
               <li class="list-group-item d-flex flex-wrap justify-content-between  text-white ">
                 <span class="fw-bold text-info">Dirección</span>
