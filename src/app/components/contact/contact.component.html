@@ -1,0 +1,117 @@
+﻿<section class="contact-section">
+  <div class="container">
+    <h2 class="section-title mb-5">¡Contacta conmigo!</h2>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="contact-info">
+
+          <p>Si estás interesado en mis servicios o quieres hablar sobre posibles colaboraciones, no dudes en ponerte en contacto conmigo a través del formulario o usando la información de contacto.</p>
+
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:admin@victormontesgarrido.com">
+              <span [innerHTML]="'admin@victormontesgarrido.com'"></span>
+            </a>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <span>678962767</span>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Membrillla, Ciudad Real</span>
+          </div>
+
+          <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="contact-form">
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="alert alert-success" *ngIf="success">
+              ¡Mensaje enviado correctamente! Te hemos enviado una copia a tu correo electrónico. Gracias por contactar.
+            </div>
+
+            <div class="alert alert-danger" *ngIf="error">
+              Ha ocurrido un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde o contáctame directamente por email.
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                formControlName="name"
+                class="form-control"
+                placeholder="Nombre"
+                [ngClass]="{ 'is-invalid': submitted && f['name'].errors }"
+              >
+              <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+                <div *ngIf="f['name'].errors?.['required']">El nombre es obligatorio</div>
+                <div *ngIf="f['name'].errors?.['minlength']">El nombre debe tener al menos 3 caracteres</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                formControlName="email"
+                class="form-control"
+                placeholder="Email"
+                [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+              >
+              <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                <div *ngIf="f['email'].errors?.['required']">El email es obligatorio</div>
+                <div *ngIf="f['email'].errors?.['email']">Introduce un email válido</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                formControlName="subject"
+                class="form-control"
+                placeholder="Asunto"
+                [ngClass]="{ 'is-invalid': submitted && f['subject'].errors }"
+              >
+              <div *ngIf="submitted && f['subject'].errors" class="invalid-feedback">
+                <div *ngIf="f['subject'].errors?.['required']">El asunto es obligatorio</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                formControlName="message"
+                class="form-control"
+                placeholder="Mensaje"
+                rows="5"
+                [ngClass]="{ 'is-invalid': submitted && f['message'].errors }"
+              ></textarea>
+              <div *ngIf="submitted && f['message'].errors" class="invalid-feedback">
+                <div *ngIf="f['message'].errors?.['required']">El mensaje es obligatorio</div>
+                <div *ngIf="f['message'].errors?.['minlength']">El mensaje debe tener al menos 10 caracteres</div>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="btn-submit"
+              [disabled]="loading"
+            >
+              <span *ngIf="!loading">Enviar mensaje</span>
+              <span *ngIf="loading">
+                <i class="fas fa-spinner fa-spin mr-2"></i> Enviando...
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

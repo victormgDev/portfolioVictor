@@ -1,0 +1,18 @@
+.habilidades{
+  .imgHabilidades{
+    height: 45px;
+    width: auto;
+    filter: grayscale(100%);
+
+    &:hover{
+      filter: grayscale(0%);
+    }
+  }
+}
+@keyframes spinner__animation {
+  from{transform:rotate(0deg);}
+  to{transform:rotate(360deg);}
+}
+.spin{
+  animation: spinner__animation 6s linear infinite;
+}

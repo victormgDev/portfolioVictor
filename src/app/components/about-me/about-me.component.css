@@ -1,0 +1,11 @@
+.personal-info-section{
+  li{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-family: Calibri;
+    font-weight: bold;
+    background-color: transparent;
+  }
+}

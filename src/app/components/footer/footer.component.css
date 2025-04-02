@@ -1,0 +1,54 @@
+#footer h5{
+  color: var(--primary-color);
+  font-family: Forte;
+}
+#footer h1{
+  color: var(--primary-color);
+  font-family: Forte;
+}
+#footer a{
+  color: var(--secondary-color);
+}
+#footer a:hover{
+  color: var(--primary-color);
+}
+#instagram svg{
+  fill: #ffffff; /* Color inicial */
+  transition: fill 0.3s ease;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+#instagram:hover svg{
+  fill: #faa300; /* Color inicial */
+  transition: fill 0.3s ease;
+}
+#linkedin svg{
+  fill: #ffffff; /* Color inicial */
+  transition: fill 0.3s ease;
+  margin-left: 5px;
+  margin-top: 5px;
+
+}
+#linkedin:hover svg{
+  fill: #0a66c2; /* Color inicial */
+  transition: fill 0.3s ease;
+
+}
+#gitHub svg{
+  fill: #ffffff; /* Color inicial */
+  transition: fill 0.3s ease;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+#gitHub:hover svg{
+  fill: #616161; /* Color inicial */
+  transition: fill 0.3s ease;
+}
+
+.footer{
+  text-align: start;
+  padding: 10px;
+  background-color: #212529; /* Ajusta según el diseño */
+  color: var(--primary-color); /* O el color que uses */
+  flex: 1;
+}

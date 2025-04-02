@@ -1,0 +1,32 @@
+<section class="habilidades">
+  <div class="container-fluid">
+    <h2 class="section-title">Habilidades</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-sm col-md-10 col-lg-8 col-xl-6 text-center">
+        <h3 class="text-center gap-4">Lenguajes de programacion</h3>
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+          <div class="pt-1" *ngFor="let lenguaje of lenguajesProgramacion">
+            <img id="habilidad-{{lenguaje.id }}" src="{{lenguaje.icon}}" class="img-fluid imgHabilidades spin" alt="{{lenguaje.name}}">
+            <h5 class="pt-2">{{lenguaje.name}}</h5>
+          </div>
+        </div>
+        <h3 class="text-center gap-4">Librerias y Frameworks</h3>
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+          <div class="pt-1" *ngFor="let framework of frameworks">
+            <img id="framework-{{framework.id }}" src="{{framework.icon}}" class="img-fluid imgHabilidades spin" alt="{{framework.name}}">
+            <h5 class="pt-2">{{framework.name}}</h5>
+          </div>
+        </div>
+        <h3 class="text-center gap-4">Ides</h3>
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+          <div class="pt-1" *ngFor="let ide of ides">
+            <img id="ide-{{ide.id }}" src="{{ide.icon}}" class="img-fluid imgHabilidades spin" alt="{{ide.name}}">
+            <h5 class="pt-2">{{ide.name}}</h5>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
