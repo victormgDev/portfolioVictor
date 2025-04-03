@@ -3,6 +3,11 @@
   color: var(--primary-color);
   font-family: Forte;
 }
+@media (max-width: 575.98px) { /* col-sm empieza en 576px */
+  #footer .col-sm-4.text-center h1 {
+    display: none;
+  }
+}
 a{
   color: var(--secondary-color);
   text-decoration: none;
