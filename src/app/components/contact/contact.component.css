@@ -4,7 +4,13 @@
 
   .contact-info {
     margin-bottom: 2rem;
+    @media (max-width: 576px) {
+      .vistaMovil{
+        justify-content: center;
+        align-items: center;
 
+      }
+    }
     p {
       font-family: Calibri;
       font-weight: bold;
