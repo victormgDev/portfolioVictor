@@ -19,6 +19,7 @@ export class SkillsComponent {
     {id: 5,name: 'C#', icon: 'assets/cesar.png' },
     {id: 6,name: 'SQL', icon: 'assets/mySql.png' },
     {id: 7,name: 'MongoDb', icon: 'assets/MongoDb.png' },
+    {id: 8, name: 'TypeScript', icon: 'assets/Typescript.png' },
   ]
 
   frameworks =[

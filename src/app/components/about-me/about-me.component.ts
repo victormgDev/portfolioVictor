@@ -25,7 +25,7 @@ export class AboutMeComponent {
         Hola a tod@s, soy <span style="color:#0DCAF0FF">Victor Montes Garrido</span>, un apasionado del desarrollo de aplicaciones web con
         formación académica en el ciclo formativo de grado superior en desarrollo de aplicaciones web. Durante mis estudios,
         he adquirido sólidos conocimientos en diversas tecnologías y lenguajes de programación, incluyendo HTML5, CSS3, Sass,
-        JavaScript, PHP, C#, MySQL, Bootstrap 5, Angular y .NET.<br><br>
+        JavaScript, TypeScript, PHP, C#, MySQL, Bootstrap 5, Angular y .NET.<br><br>
 
         Mi experiencia en el desarrollo web se complementa con habilidades en diseño de bases de datos, gestión de proyectos
         y la creación de APIs con .NET y MongoDB, lo que me permite desarrollar aplicaciones escalables y eficientes.<br><br>
