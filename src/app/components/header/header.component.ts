@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import {NgForOf} from '@angular/common';
+import {TypewriterComponent} from '../typewriter/typewriter.component';
 
 @Component({
   selector: 'app-header',
   imports: [
-    NgForOf
+    NgForOf,
+    TypewriterComponent
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'

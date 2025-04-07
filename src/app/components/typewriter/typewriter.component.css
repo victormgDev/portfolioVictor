@@ -1,0 +1,24 @@
+/* src/app/components/typewriter/typewriter.component.css */
+.typewriter {
+  font-family: monospace;
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.8s infinite;
+  color: var(--primary-color);
+}
+.name{
+  font-family: 'Forte', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+@keyframes blink {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
+}
