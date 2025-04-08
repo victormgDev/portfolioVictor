@@ -1,4 +1,20 @@
+@keyframes pulse {
+  0%{
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+
+  }
+  100% {
+    transform: scale(1);
+
+  }
+}
 .personal-info-section{
+  i{
+    color: var(--primary-color);
+  }
   li{
     outline: none;
     border: none;
@@ -36,5 +52,39 @@
       justify-items: center;
 
     }
+  }
+  .exp{
+    background-color: #444;
+    color: #fafafa;
+    border-radius: 15px;
+    border-left: 5px solid var(--primary-color);
+    margin-top: 10px;
+    h6{
+      color: var(--primary-color);
+    }
+    span{
+      border: 1px solid var(--primary-color);
+      padding: 2px 5px;
+      margin-bottom: 5px;
+      color: var(--primary-color);
+      border-radius: 5px;
+      &:hover{
+        color: var(--secondary-color);
+      }
+    }
+    a{
+      text-decoration: none;
+    }
+    .certificado{
+      border: none;
+      background-color: transparent;
+    }
+    .pulse-link{
+      display: inline-block;
+      animation: pulse 1.7s infinite;
+      transition: transform 0.2s ease;
+    }
+
+
   }
 }

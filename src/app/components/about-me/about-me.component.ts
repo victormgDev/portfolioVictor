@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import {NgForOf} from '@angular/common';
+import {NgForOf, NgIf} from '@angular/common';
 import {DomSanitizer, SafeHtml} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-about-me',
   imports: [
+    NgForOf,
+    NgIf
 
   ],
   templateUrl: './about-me.component.html',
@@ -12,7 +14,8 @@ import {DomSanitizer, SafeHtml} from '@angular/platform-browser';
 })
 export class AboutMeComponent {
   personalInfo: { name: string; nacimiento: string; movil: string; email: string; web: string; localizacion: string; descripcion: SafeHtml };
-
+  experiencia: { duracion: string; puesto:string; empresa:string; conocimientos: string [] }[];
+  formacion: {titulo: string; duracionFormacion: string; empresaFormacion: string; certificacion:string; url:string;}[];
   constructor(private sanitizer: DomSanitizer) {
     this.personalInfo = {
       name: 'Victor Montes Garrido',
@@ -38,5 +41,48 @@ export class AboutMeComponent {
         y contribuir con mis habilidades en proyectos innovadores.
       `)
     };
+    this.experiencia = [
+      {
+        duracion: 'Enero 2025 - Abril 2025',
+        puesto: 'Estudiante en practicas',
+        empresa: 'Dimax Soluciones Integrales',
+        conocimientos: [
+          'HTML',
+          'CSS',
+          'Wordpress',
+          'Odoo',
+        ]
+      }
+    ]
+    this.formacion = [
+      {
+        titulo: 'Ciclo formativo Grado Superior DAW',
+        duracionFormacion: 'Septiembre 2023 - Abril 2025',
+        empresaFormacion: 'Ilerna',
+        certificacion: '',
+        url: ''
+      },
+      {
+        titulo: 'Angular 19',
+        duracionFormacion: 'Enero 2025 - Marzo 2025',
+        empresaFormacion: 'Udemy',
+        certificacion: 'UC-eae4929c-a358-444d-9ae2-e57094ec3d2b',
+        url: 'https://www.udemy.com/certificate/UC-eae4929c-a358-444d-9ae2-e57094ec3d2b/'
+      },
+      {
+        titulo: 'API REST .NET',
+        duracionFormacion: 'Enero 2025 - Marzo 2025',
+        empresaFormacion: 'Udemy',
+        certificacion: 'UC-c8a2e80d-1a74-4c8b-b959-83f88f74aaf2',
+        url: 'https://www.udemy.com/certificate/UC-c8a2e80d-1a74-4c8b-b959-83f88f74aaf2/'
+      },
+      {
+        titulo: 'Docker',
+        duracionFormacion: 'Marzo 2025 - Actualidad',
+        empresaFormacion: 'Udemy',
+        certificacion: '',
+        url: ''
+      }
+    ]
   }
 }

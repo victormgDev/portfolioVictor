@@ -9,37 +9,18 @@
             class="col-12 col-sm-6 col-lg-4 mb-4 d-flex align-items-stretch"
             *ngFor="let proyecto of proyectos">
             <div class="card w-100 shadow-sm">
-              <img
-                [src]="proyecto.imagen"
-                class="card-img-top"
-                alt="{{ proyecto.nombre }}"
-              />
+              <img [src]="proyecto.imagen" class="card-img-top" alt="{{ proyecto.nombre }}"/>
               <div class="card-body">
                 <h5 class="card-title">{{ proyecto.nombre }}</h5>
                 <p class="card-text">{{ proyecto.descripcion }}</p>
                 <div class="d-flex flex-wrap justify-content-start gap-2 mt-3 ">
-                  <span class="tecnologias"
-                    *ngFor="let tech of proyecto.tecnologias"
-                  >
-                    {{ tech }}
-                  </span>
+                  <span class="tecnologias" *ngFor="let tech of proyecto.tecnologias">{{ tech }}</span>
                 </div>
               </div>
               <div class="card-footer d-flex justify-content-between">
                 <a
-                  [href]="proyecto.gitHub"
-                  target="_blank"
-                >
-                  <i class="bi bi-github"></i>
-                  Codigo</a
-                >
-                <a
-                  *ngIf="proyecto.verProyecto"
-                  [href]="proyecto.verProyecto"
-                  target="_blank"
-                  class="btn btn-sm btn-outline-success"
-                >Ver Proyecto</a
-                >
+                  [href]="proyecto.gitHub" target="_blank"><i class="bi bi-github"></i>Codigo</a>
+                <a *ngIf="proyecto.verProyecto" [href]="proyecto.verProyecto" target="_blank" class="btn btn-sm btn-outline-success">Ver Proyecto</a>
               </div>
             </div>
           </div>

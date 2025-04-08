@@ -12,7 +12,7 @@
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-sm col-md-10 col-lg-8 col-xl-6">
-            <h3 class="text-center pt-4 text-white ">Datos Personales</h3>
+            <h3 class="text-center pt-4 text-white "><i class="bi bi-clipboard2-data"></i> Datos Personales</h3>
             <ul class="list-group text-white p-2 ">
 
               <li class="list-group-item d-flex flex-wrap justify-content-between  text-white ">
@@ -28,6 +28,49 @@
                 <span class="text-end">{{personalInfo.localizacion}}</span>
               </li>
             </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-sm col-md-10 col-lg-8 col-xl-6">
+            <h3 class="text-center pt-4 text-white "><i class="bi bi-person-workspace"></i> Experiencia</h3>
+            <div class="row justify-content-center exp" *ngFor="let exp of experiencia">
+              <div class="col-6 d-flex flex-wrap justify-content-between">
+                <h6 class="mb-0 mt-2 text-start">{{exp.puesto}}</h6>
+                <p class="mb-2 text-start">{{exp.empresa}}</p>
+              </div>
+              <div class="col-6 d-flex flex-wrap justify-content-end">
+                <p class="mb-0 mt-2">{{exp.duracion}}</p>
+                <div class="d-flex flex-wrap justify-content-end gap-2 mt-0">
+                  <ng-container *ngIf="exp.conocimientos">
+                    <span class="exp" *ngFor="let tech of exp.conocimientos">{{tech}}</span>
+                  </ng-container>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-sm col-md-10 col-lg-8 col-xl-6">
+            <h3 class="text-center pt-4 text-white"><i class="bi bi-journal-code"></i> Educación</h3>
+
+            <div class="row justify-content-center exp" *ngFor="let edu of formacion">
+
+              <!-- Columna izquierda: título y empresa -->
+              <div class="col-12 col-md-5 d-flex flex-column align-items-start">
+                <h6 class="mb-0 mt-2">{{ edu.titulo }}</h6>
+                <p class="mb-2">{{ edu.empresaFormacion }}</p>
+              </div>
+
+              <!-- Columna derecha: duración y certificación -->
+              <div class="col-12 col-md-7 d-flex flex-column align-items-end text-end">
+                <p class="mb-0 mt-2">{{ edu.duracionFormacion }}</p>
+                <ng-container *ngIf="edu.certificacion">
+                  <a [href]="edu.url" target="_blank" class="pulse-link">
+                    <span class="exp certificado mb-2">{{ edu.certificacion }}</span>
+                  </a>
+                </ng-container>
+              </div>
+            </div>
           </div>
         </div>
       </div>
