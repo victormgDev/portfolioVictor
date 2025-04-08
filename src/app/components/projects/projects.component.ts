@@ -1,33 +1,62 @@
 import { Component } from '@angular/core';
+import {NgForOf, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [
+    NgForOf,
+    NgIf
+  ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
-  projects = [
+  proyectos = [
     {
-      title: 'E-commerce Website',
-      description: 'Tienda online con carrito de compras, registro de usuarios y panel de administración.',
-      image: 'assets/img/projects/ecommerce.jpg',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
-      link: '#'
+      nombre: 'Mi Portfolio',
+      descripcion: 'Porfolio personal creado con Angular',
+      tecnologias: [
+        'Angular',
+        'Bootstrap',
+        'HTML5',
+        'TypeScript',
+        'CSS3'
+      ],
+      imagen: 'assets/portfolio.png',
+      gitHub: 'https://github.com/victormgDev/portfolioVictor',
+      verProyecto: 'www.victormontesgarrido.com'
     },
     {
-      title: 'Blog Personal',
-      description: 'Blog con sistema de gestión de contenido personalizado para artículos y categorías.',
-      image: 'assets/img/projects/blog.jpg',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
-      link: '#'
+      nombre: 'Api de Contacto',
+      descripcion: 'API REST en C# para enviar emails desde el formulario de contacto',
+      tecnologias: [
+        '.NET',
+        'C#',
+        'Docker',
+        'HTML5',
+        'CSS3',
+        'Railway'
+      ],
+      imagen: 'assets/formContact.png',
+      gitHub: 'https://github.com/victormgDev/PorfolioApi',
+      verProyecto: ''
     },
     {
-      title: 'App de Notas',
-      description: 'Aplicación para gestionar notas personales con funcionalidades de crear, editar y eliminar.',
-      image: 'assets/img/projects/notes.jpg',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'LocalStorage'],
-      link: '#'
+      nombre: 'Todo Sobre Aviones',
+      descripcion: 'Proyecto final DAW, aplicacion para rastrear vuelos en tiempo real ' +
+        'y una enciclopedia de aviones',
+      tecnologias: [
+        'PHP',
+        'JavaScript',
+        'Bootstrap',
+        'HTML5',
+        'CSS3',
+        'MySQL'
+      ],
+      imagen: 'assets/appTsa.png',
+      gitHub: 'https://github.com/victormgDev/ProyectoFinalDaw_TSA',
+      verProyecto: ''
     }
+
   ]
 }
