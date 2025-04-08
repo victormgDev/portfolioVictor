@@ -6,6 +6,7 @@
     color: var(--primary-color);
     font-family: Calibri;
     font-weight: bold;
+    line-height: 3;
     background-color: transparent;
     &:hover{
       background-color: #444 ;
