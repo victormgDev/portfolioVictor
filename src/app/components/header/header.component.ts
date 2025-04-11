@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {NgForOf} from '@angular/common';
 import {TypewriterComponent} from '../typewriter/typewriter.component';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -19,5 +20,8 @@ export class HeaderComponent {
     {title: 'Proyectos', link: '#projects'},
     {title: 'Contacto', link: '#contact'},
   ];
+
+  constructor(private router: Router) {
+  }
 
 }
