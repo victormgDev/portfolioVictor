@@ -8,13 +8,15 @@ import {DomSanitizer} from '@angular/platform-browser';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-  infoFooter: {name: string; email: string; web: string; localizacion: string;};
+  infoFooter: {name: string; email: string; web: string; localizacion: string; copyright: string;};
 constructor(private sanitizer: DomSanitizer) {
   this.infoFooter = {
     name: 'Victor',
     email: 'admin@victormontesgarrido.com',
     web: 'www.victormontesgarrido.com',
-    localizacion: 'Membrilla, Ciudad Real, 13230'
+    localizacion: 'Ciudad Real, 13230',
+    copyright: '© 2025 Victor Montes. Todos los derechos reservados'
+
   }
 }
 }
