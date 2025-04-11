@@ -1,5 +1,4 @@
 import {Component, Inject} from '@angular/core';
-import {ActivatedRoute, NavigationEnd, Router, RouterOutlet} from '@angular/router';
 import {HeaderComponent} from './components/header/header.component';
 import {AboutMeComponent} from './components/about-me/about-me.component';
 import {SkillsComponent} from './components/skills/skills.component';
@@ -7,7 +6,6 @@ import {ProjectsComponent} from './components/projects/projects.component';
 import {ContactComponent} from './components/contact/contact.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {Meta, Title} from '@angular/platform-browser';
-import {filter, map, mergeMap} from 'rxjs';
 import {DOCUMENT} from '@angular/common';
 
 @Component({
