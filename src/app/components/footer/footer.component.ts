@@ -14,7 +14,7 @@ constructor(private sanitizer: DomSanitizer) {
     name: 'Victor',
     email: 'admin@victormontesgarrido.com',
     web: 'www.victormontesgarrido.com',
-    localizacion: 'Ciudad Real, 13230',
+    localizacion: 'Ciudad Real, España',
     copyright: '© 2025 Victor Montes. Todos los derechos reservados'
 
   }
