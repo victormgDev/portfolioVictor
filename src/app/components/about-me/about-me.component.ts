@@ -13,14 +13,14 @@ import {DomSanitizer, SafeHtml} from '@angular/platform-browser';
   styleUrl: './about-me.component.css'
 })
 export class AboutMeComponent {
-  personalInfo: { name: string; nacimiento: string; movil: string; email: string; web: string; localizacion: string; descripcion: SafeHtml };
+  personalInfo: { name: string; nacimiento: string; curriculum: string; email: string; web: string; localizacion: string; descripcion: SafeHtml };
   experiencia: { duracion: string; puesto:string; empresa:string; conocimientos: string [] }[];
   formacion: {titulo: string; duracionFormacion: string; empresaFormacion: string; certificacion:string; url:string;}[];
   constructor(private sanitizer: DomSanitizer) {
     this.personalInfo = {
       name: 'Victor Montes Garrido',
       nacimiento: '22 de Septiembre de 1994',
-      movil: '678962767',
+      curriculum: 'assets/CV-Victor.pdf',
       email: 'admin@victormontesgarrido.com',
       web: 'www.victormontesgarrido.com',
       localizacion: 'Ciudad Real, España',
