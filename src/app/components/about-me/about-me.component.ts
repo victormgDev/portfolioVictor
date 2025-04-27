@@ -44,7 +44,7 @@ export class AboutMeComponent {
     this.experiencia = [
       {
         duracion: 'Enero 2025 - Abril 2025',
-        puesto: 'Estudiante en practicas',
+        puesto: 'Estudiante en prácticas',
         empresa: 'Dimax Soluciones Integrales',
         conocimientos: [
           'HTML',

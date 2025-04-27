@@ -11,11 +11,11 @@ export class FooterComponent {
   infoFooter: {name: string; email: string; web: string; localizacion: string; copyright: string;};
 constructor(private sanitizer: DomSanitizer) {
   this.infoFooter = {
-    name: 'Victor',
+    name: 'Víctor',
     email: 'admin@victormontesgarrido.com',
     web: 'www.victormontesgarrido.com',
     localizacion: 'Ciudad Real, España',
-    copyright: '© 2025 Victor Montes. Todos los derechos reservados'
+    copyright: '© 2025 Víctor Montes Garrido. Todos los derechos reservados'
 
   }
 }

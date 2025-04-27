@@ -15,7 +15,7 @@ import {Router} from '@angular/router';
 export class HeaderComponent {
   navItems = [
     {title: 'Inicio', link: '#'},
-    {title: 'Sobre mi', link: '#about'},
+    {title: 'Sobre mí', link: '#about'},
     {title: 'Habilidades', link: '#skills'},
     {title: 'Proyectos', link: '#projects'},
     {title: 'Contacto', link: '#contact'},
